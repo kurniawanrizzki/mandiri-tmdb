@@ -1,0 +1,16 @@
+spotless {
+    kotlin {
+        target "**/*.kt"
+        ktlint("0.49.1").setEditorConfigPath("${project.rootDir}/spotless/.editorconfig")
+    }
+}
+
+task createPreCommitHook(type: Copy) {
+    from new File(rootProject.rootDir, 'scripts/pre-commit')
+    into { new File(rootProject.rootDir, '.git/hooks') }
+    fileMode 0777
+}
+
+afterEvaluate {
+    preBuild.dependsOn createPreCommitHook
+}
