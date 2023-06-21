@@ -44,6 +44,15 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.google.material)
     implementation(libs.androidx.constraint.layout)
+
+    implementation(libs.squareapp.retrofit)
+    implementation(libs.squareapp.retrofit.converter.gson)
+    implementation(platform(libs.squareapp.okhttp.bom))
+    implementation(libs.squareapp.okhttp.client)
+    implementation(libs.squareapp.okhttp.logging.interceptor)
+
+    implementation(libs.androidx.paging)
+
     testImplementation(libs.test.junit)
     androidTestImplementation(libs.test.ext.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
