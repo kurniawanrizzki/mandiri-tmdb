@@ -8,4 +8,8 @@ plugins {
     alias(libs.plugins.android.kotlin) apply false
     @Suppress("DSL_SCOPE_VIOLATION")
     alias(libs.plugins.diffplug.spotless) apply false
+    @Suppress("DSL_SCOPE_VIOLATION")
+    alias(libs.plugins.google.hilt) apply false
+    @Suppress("DSL_SCOPE_VIOLATION")
+    alias(libs.plugins.androidx.navigation.args) apply false
 }

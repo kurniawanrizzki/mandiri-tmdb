@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_marginBottom="@dimen/normal_100"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/video_height"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.TMDB.Normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_100"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.TMDB.Poppins.Subtitle2"
+            app:layout_constraintStart_toStartOf="@id/iv_video"
+            app:layout_constraintEnd_toEndOf="@id/iv_video"
+            app:layout_constraintTop_toBottomOf="@id/iv_video"
+            tools:text="@tools:sample/lorem"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

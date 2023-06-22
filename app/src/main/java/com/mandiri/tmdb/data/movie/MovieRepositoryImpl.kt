@@ -14,8 +14,9 @@ import com.mandiri.tmdb.domain.common.ResultType
 import com.mandiri.tmdb.domain.movie.MovieRepository
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
-class MovieRepositoryImpl constructor(
+class MovieRepositoryImpl @Inject constructor(
     private val api: MovieApi
 ) : MovieRepository {
     override fun getMovies(

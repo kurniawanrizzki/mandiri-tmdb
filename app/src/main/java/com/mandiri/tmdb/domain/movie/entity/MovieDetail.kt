@@ -5,6 +5,8 @@ data class MovieDetail(
     val originalLanguage: String,
     val backdropPath: String,
     val genres: String,
+    val runtime: Int?,
+    val year: String,
     val tagline: String?,
     val overview: String,
     val status: String?,

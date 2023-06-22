@@ -7,4 +7,7 @@ data class Review(
     val avatarPath: String?,
     val rating: Float?,
     val content: String
-)
+) {
+    val displayName: String =
+        name.ifBlank { author }
+}

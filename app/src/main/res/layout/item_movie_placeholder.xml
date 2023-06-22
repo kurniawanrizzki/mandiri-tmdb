@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_movie"
+        android:layout_width="@dimen/large_poster_width"
+        android:layout_height="@dimen/large_poster_height"
+        android:layout_marginEnd="@dimen/normal_100"
+        android:layout_marginBottom="@dimen/normal_100"
+        android:background="@color/grey"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.TMDB.Normal"
+        />
+</layout>

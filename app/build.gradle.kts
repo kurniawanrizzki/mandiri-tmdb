@@ -5,6 +5,11 @@ plugins {
     alias(libs.plugins.android.kotlin)
     @Suppress("DSL_SCOPE_VIOLATION")
     alias(libs.plugins.diffplug.spotless)
+    @Suppress("DSL_SCOPE_VIOLATION")
+    alias(libs.plugins.google.hilt)
+    @Suppress("DSL_SCOPE_VIOLATION")
+    alias(libs.plugins.androidx.navigation.args)
+    kotlin("kapt")
 }
 
 android {
@@ -42,9 +47,16 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+    implementation(libs.google.hilt)
+    kapt(libs.google.hilt.compiler)
+
     implementation(libs.google.material)
     implementation(libs.androidx.constraint.layout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 
+    implementation(libs.facebook.shimmer)
+    implementation(libs.coil.kt)
     implementation(libs.squareapp.retrofit)
     implementation(libs.squareapp.retrofit.converter.gson)
     implementation(platform(libs.squareapp.okhttp.bom))

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Exercise App</string>
+
+    <string name="splash_page">Splash Page</string>
+    <string name="movies_page">Movies Page</string>
+    <string name="detail_page">Detail Page</string>
+    <string name="about">About Movie</string>
+    <string name="review">Reviews</string>
+    <string name="video">Videos</string>
+    <string name="duration">%d Minutes</string>
+    <string name="no_result">We Are Sorry, We Can Not Find The Data :(</string>
 </resources>

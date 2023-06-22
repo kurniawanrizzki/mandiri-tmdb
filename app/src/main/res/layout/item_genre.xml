@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="text"
+            type="String"
+            />
+        <variable
+            name="callback"
+            type="android.view.View.OnClickListener"
+            />
+    </data>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@{text}"
+        android:onClick="@{callback}"
+        android:textAppearance="@style/TextAppearance.TMDB.Poppins.Button"
+        android:textColor="@color/text_color_selection"
+        app:backgroundTint="@color/bg_color_selection"
+        tools:text="@tools:sample/lorem"
+        tools:layout_marginEnd="@dimen/small_100"
+        />
+</layout>

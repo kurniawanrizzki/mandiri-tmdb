@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TMDB.Toolbar" parent="Widget.Material3.Toolbar.Surface">
+        <item name="materialThemeOverlay">@style/TMDB.ThemeOverlay.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.TMDB.Poppins.Headline6</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="TMDB.ThemeOverlay.Toolbar" parent="">
+        <item name="colorSurface">?colorPrimary</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.TMDB.Poppins.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.TMDB.Montserrat.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+    </style>
+
+    <style name="TextAppearance.TMDB.Montserrat.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/montserrat_semibold</item>
+    </style>
+
+    <style name="TextAppearance.TMDB.Poppins.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.TMDB.Poppins.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextAppearance.TMDB.Poppins.Caption.Medium" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextAppearance.TMDB.Poppins.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="ShapeAppearance.TMDB.Normal" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="ShapeAppearance.TMDB.Oval" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.TMDB.Bottom.Normal" parent="">
+        <item name="cornerSizeBottomLeft">10%</item>
+        <item name="cornerSizeBottomRight">10%</item>
+    </style>
+</resources>
