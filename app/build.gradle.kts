@@ -24,6 +24,8 @@ android {
         versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "TMDB_API_KEY", "\"" + getTMDBApiKey() + "\"")
     }
 
     buildTypes {
@@ -41,6 +43,7 @@ android {
     }
     buildFeatures {
         dataBinding = true
+        buildConfig = true
     }
 }
 
@@ -69,5 +72,8 @@ dependencies {
     androidTestImplementation(libs.test.ext.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
 }
+
+fun getTMDBApiKey(): String? =
+    project.findProperty("tmdb.api.key") as? String
 
 apply(from = rootProject.file("spotless.gradle"))

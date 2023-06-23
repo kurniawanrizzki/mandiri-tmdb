@@ -3,6 +3,7 @@ package com.mandiri.tmdb.di
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.mandiri.tmdb.BuildConfig
+import com.mandiri.tmdb.data.common.BASE_URL
 import com.mandiri.tmdb.data.common.RequestInterceptor
 import com.mandiri.tmdb.data.common.UTCAdapter
 import dagger.Module
@@ -49,7 +50,7 @@ object AppModule {
         Retrofit.Builder().apply {
             addConverterFactory(GsonConverterFactory.create(gson))
             client(client)
-            baseUrl("https://api.themoviedb.org/3/")
+            baseUrl(BASE_URL)
         }.build()
 }
 
